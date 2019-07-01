@@ -1,24 +1,23 @@
 {
   "name": "merge-img",
-  "version": "2.1.2",
+  "version": "3.0.0",
   "description": "Merge multiple images into a single image",
-  "author": "Plusb Preco <plusb21@gmail.com>",
-  "main": "lib/index.js",
+  "author": "Leo Dutra <leodutra.br@gmail.com>",
+  "main": "index.js",
   "scripts": {
-    "prepublish": "npm run test && npm run build",
+    "prepublish": "npm run test",
     "prebuild": "npm run clean",
     "test": "eslint . && jest",
-    "build": "babel --out-dir lib src",
     "clean": "rimraf lib"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "license": "MIT",
-  "homepage": "https://github.com/preco21/merge-img#readme",
-  "repository": "preco21/merge-img",
+  "homepage": "https://github.com/leodutra/merge-img#readme",
+  "repository": "leodutra/merge-img",
   "bugs": {
-    "url": "https://github.com/preco21/merge-img/issues"
+    "url": "https://github.com/leodutra/merge-img/issues"
   },
   "files": [
     "lib"
@@ -32,17 +31,16 @@
     "merge"
   ],
   "dependencies": {
-    "is-plain-obj": "^1.1.0",
+    "is-plain-obj": "^2.0.0",
     "jimp": "^0.6.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^20.0.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-1": "^6.24.1",
-    "eslint": "^4.5.0",
-    "eslint-config-prev": "^6.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
     "jest": "^20.0.4",
     "rimraf": "^2.6.1"
   }
